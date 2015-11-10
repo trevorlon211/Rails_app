@@ -1,7 +1,6 @@
 == README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+I'm Trevorlon Jainarain-a future webdeveloper and designer. Building apps and technology that would make a difference in people's lives.
 
 Things you may want to cover:
 
