@@ -13,3 +13,32 @@
  *= require_tree .
  *= require_self
  */
+
+.projectName a {
+    color: white;
+    padding: 15px;
+}
+
+.navbar{
+
+  position: fixed;
+     width: 100%;
+     top: 0;
+     z-index: 1;
+     color: rgba(149, 130, 176, 0.1);
+}
+
+.nav{
+     float:right;
+}
+
+footer {
+    background-color: black;
+    width: 100%;
+    position: relative;
+    height: 70px;
+    bottom: 0px;
+    opacity: .7;
+    z-index: 1;
+    font-size: 1em;
+}
