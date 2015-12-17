@@ -10,8 +10,7 @@
 
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
 
-  <meta name-"viewwport" content-"width=device-width, initial-scale=1"
-
+  <meta name-"viewwport" content-"width=device-width, initial-scale=1">
   <script>
           ! function(d, s, id) {
               var js, fjs = d.getElementsByTagName(s)[0],
@@ -54,6 +53,11 @@
              <li><a href="#aboutus">About Us</a></li>
              <li><a href="#contact">Contact</a></li>
            </ul>
+           <%= form_tag("/products", method: "get") do %>
+            <%= label_tag(:q, "Search for:") %>
+            <%= text_field_tag(:q) %>
+            <%= submit_tag("Search", class: "btn btn-primary") %>
+           <% end %>
         </div>
       </div> <!-- end nav container-->
    </nav> <!-- navbar ends here-->
