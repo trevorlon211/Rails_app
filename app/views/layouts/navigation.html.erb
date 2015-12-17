@@ -22,12 +22,14 @@
              <li><a href="/static_pages/about">About Us</a></li>
              <li><a href="/static_pages/contact">Contact</a></li>
            </ul>
-        </div>
-         <%= form_tag("/products", method: "get") do %>
-         <%= label_tag(:q, "Search for:") %>
-         <%= text_field_tag(:q) %>
-         <%= submit_tag("Search") %>
-         <% end %>s
+         </div>
+         <div class = "field form">
+          <%= form_tag("/products", method: "get") do %>
+          <%= label_tag(:q, "Search for:") %>
+          <%= text_field_tag(:q) %>
+          <%= submit_tag("Search") %>
+          <% end %>
+         </div>
      </div> <!-- end nav container-->
    </nav> <!-- navbar ends here-->
    
