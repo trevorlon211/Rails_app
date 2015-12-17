@@ -23,10 +23,11 @@
              <li><a href="/static_pages/contact">Contact</a></li>
            </ul>
         </div>
-      </div> <!-- end nav container-->
+         <%= form_tag("/products", method: "get") do %>
+         <%= label_tag(:q, "Search for:") %>
+         <%= text_field_tag(:q) %>
+         <%= submit_tag("Search") %>
+         <% end %>s
+     </div> <!-- end nav container-->
    </nav> <!-- navbar ends here-->
-   <%= form_tag("/products", method: "get") do %>
-   <%= label_tag(:q, "Search for:") %>
-   <%= text_field_tag(:q) %>
-   <%= submit_tag("Search") %>
-   <% end %>
+   
