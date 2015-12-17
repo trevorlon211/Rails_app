@@ -1,4 +1,7 @@
  <!DOCTYPE html>
+
+  <%= csrf_meta_tags %>
+
  <!--navbar starts here-->
    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
       <div class="container-fluid">
@@ -11,7 +14,7 @@
           <span class="icon-bar"></span>
           </button>
           <div class="projectName">
-          <a href="#">Artsy Design Coo</a>
+          <a href="#">Artsy Design Co</a>
           </div>
         </nav>
 
@@ -22,15 +25,16 @@
              <li><a href="#start">Start Your Order</a></li>
              <li><a href="/static_pages/about">About Us</a></li>
              <li><a href="/static_pages/contact">Contact</a></li>
+             <li>
+                <%= form_tag("/products", method: "get") do %>
+                <%= label_tag(:q, "Search for:") %>
+                <%= text_field_tag(:q) %>
+                <%= submit_tag("Search", class: "btn btn-primary") %>
+                <% end %>
+             </li>
            </ul>
-         </div>
-         <div class = "field form">
-          <%= form_tag("/products", method: "get") do %>
-          <%= label_tag(:q, "Search for:") %>
-          <%= text_field_tag(:q) %>
-          <%= submit_tag("Search") %>
-          <% end %>
-         </div>
-     </div> <!-- end nav container-->
-   </nav> <!-- navbar ends here-->
+          </div>
+        </div>
+       </nav> <!-- navbar ends here-->
+
    <%= yield %>
