@@ -44,14 +44,6 @@
           <a href="#">Artsy Design Co</a>
           </div>
         </nav>
-        <form class="navbar-form navbar-left" role="search">
-          <%= form_tag("/products", method: "get") do %>
-           <%= label_tag(:q, "Search for:") %>
-           <%= text_field_tag(:q) %>
-           <%= submit_tag("Search", class: "btn btn-primary") %>
-           <% end %>
-         </form>
-
          <div class="navbar-collapse collapse">
            <ul class= "nav navbar-nav">
              <li><a href="#Home">Home</a></li>
@@ -59,6 +51,12 @@
              <li><a href="#start">Start Your Order</a></li>
              <li><a href="#aboutus">About Us</a></li>
              <li><a href="#contact">Contact</a></li>
+             <li><%= form_tag("/products", method: "get") do %>
+                 <%= label_tag(:q, "Search for:") %>
+                 <%= text_field_tag(:q) %>
+                 <%= submit_tag("Search", class: "btn btn-primary") %>
+                 <% end %>
+             </li>
            </ul>
         </div>
       </div> <!-- end nav container-->
