@@ -14,6 +14,8 @@ Rails.application.routes.draw do
 
   resources :orders, only: [:index, :show, :create, :destroy]
 
+  post 'static_pages/thank_you'
+
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
 

@@ -46,11 +46,12 @@
         </nav>
          <div class="navbar-collapse collapse">
            <ul class= "nav navbar-nav">
-             <li><a href="#Home">Home</a></li>
-             <li><a a href="products">Products</a></li>
-             <li><a href="#start">Start Your Order</a></li>
-             <li><a href="#aboutus">About Us</a></li>
-             <li><a href="#contact">Contact</a></li>
+             <li><a class="page-scroll" href="/static_pages/landing_page">Home</a>
+             </li>
+             <li><a class="page-scroll" href="/static_pages/about">About</a></li>
+             <li><a class="page-scroll" href="/products">Products</a>
+             </li>
+             <li><a class="page-scroll" href="/static_pages/contact">Contact</a></li>
              <li><%= form_tag("/products", method: "get") do %>
                  <%= label_tag(:q, "Search for:") %>
                  <%= text_field_tag(:q) %>
