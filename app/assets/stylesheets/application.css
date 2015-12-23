@@ -101,3 +101,18 @@ footer {
    padding-top: 10px;
    border-radius: 5px;
  }
+
+  // Typography
+ h1 {
+   font-family: futura, sans-serif;
+   text-align: center;
+ }
+
+ h2 {
+   font-family: futura, sans-serif;
+   text-align: center;
+ }
+
+ p {
+   font-family: futura, sans-serif;
+ }
