@@ -78,8 +78,26 @@ footer {
   margin-bottom: 0px;
 }
 
-.center-block {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-}
+// Registration Page
+
+ #new-registration {
+   background-color: #F7F9FA;
+   padding-top: 10px;
+   border-radius: 5px;
+ }
+
+ // Forgot Password Page
+
+ #forgot-password {
+   background-color: #F7F9FA;
+   padding-top: 10px;
+   border-radius: 5px;
+ }
+
+ // Sign in Page
+
+ #sign_in_page {
+   background-color: #F7F9FA;
+   padding-top: 10px;
+   border-radius: 5px;
+ }
