@@ -96,4 +96,23 @@ footer {
 
  p {
    font-family: futura, sans-serif;
+
+
+#new_user {
+  display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 60%;
+
+}
+
+#logincontainer {
+  width: 60%;
+}
+
+#loginfield label, #signupfield label, #user_email, #user_password, #user_last_name, #user_first_name, #user_password_confirmation, #signup, #loginfield, #signem, .actions, .field, #link_to, #render, #new_comment, #product_price, #product_color, label {
+  display: block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
  }
