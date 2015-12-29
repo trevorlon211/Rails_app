@@ -79,29 +79,9 @@ footer {
   margin-bottom: 0px;
 }
 
-// Registration Page
 
- #new-registration {
-   background-color: #F7F9FA;
-   padding-top: 10px;
-   border-radius: 5px;
- }
 
- // Forgot Password Page
-
- #forgot-password {
-   background-color: #F7F9FA;
-   padding-top: 10px;
-   border-radius: 5px;
- }
-
- // Sign in Page
-
- #sign_in_page {
-   background-color: #F7F9FA;
-   padding-top: 10px;
-   border-radius: 5px;
- }
+ 
 
   // Typography
  h1 {
