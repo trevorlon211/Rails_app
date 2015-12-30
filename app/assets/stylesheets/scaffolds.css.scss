@@ -71,3 +71,17 @@ div {
     list-style: square;
   }
 }
+
+
+#remembercontainer {
+    display: flex;
+    width: 40%;
+}
+
+#rememberlabel {
+  width: 200px;
+}
+
+#rememberbox {
+  flex: 1;
+}
