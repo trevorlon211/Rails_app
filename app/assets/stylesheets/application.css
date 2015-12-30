@@ -15,14 +15,6 @@
  */
  
 
-body {
-    background-color: #fff;
-    color: #333;
-    font-family: verdana, arial, helvetica, sans-serif;
-    font-size: 13px;
-    line-height: 18px;
-}
-
 .projectName {
     text-transform: uppercase;
     font-size: 16px;
@@ -82,20 +74,4 @@ footer {
 
 
  
-
-/* Typography */
-
- h1 {
-   font-family: futura, sans-serif;
-   text-align: center;
- }
-
- h2 {
-   font-family: futura, sans-serif;
-   
- }
-
- p {
-   font-family: futura, sans-serif;
-
 
