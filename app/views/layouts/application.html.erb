@@ -82,7 +82,9 @@
    <p id="alert" class="alert alert-info"><%= alert %></p>
    <% end %>
 
-<%= yield %>
+  <%= yield %>
+
+  <%= render 'layouts/footer' %>
 
 <!-- JS Scripts -->
     <script type="text/javascript">
@@ -98,21 +100,5 @@
     });
 
 </body>
-
-
-
-<footer class="foot navbar-fixed-bottom">
-  <div class="copyright">
-    <p>© 2015 Artsy Design Co | All rights Reserved</p>
-   </div>
-   <div class="follow">
-     <a href="https://twitter.com/Trevorlon" class="twitter-follow-button" data-show-count="false">Follow @Trevorlon</a>
-   </div>
-
-  <div class="facebook">
-    <div class="fb-like" data-href="https://www.facebook.com/careerfoundry" data-layout="button_count" data-action="like" data-show-faces="false" data-share="false"></div>
-  </div>
-
- </footer>
 
 </html>
