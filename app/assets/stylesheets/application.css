@@ -83,7 +83,8 @@ footer {
 
  
 
-  // Typography
+/* Typography */
+
  h1 {
    font-family: futura, sans-serif;
    text-align: center;
@@ -97,16 +98,4 @@ footer {
  p {
    font-family: futura, sans-serif;
 
-
-#new_user {
-  display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 60%;
-
-}
-
-#logincontainer {
-  width: 60%;
-}
 
