@@ -7,6 +7,8 @@ Rails.application.routes.draw do
     resources :comments
   end
   
+  get 'static_pages/products'
+  
   get 'static_pages/about'
 
   get 'static_pages/contact'
