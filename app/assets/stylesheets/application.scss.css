@@ -16,6 +16,21 @@
 @import "bootstrap-sprockets";
 @import "bootstrap";
 
+ #body-area {
+   padding-top: 50px;
+   padding-bottom: 80px;
+   padding-left: 0px;
+   padding-right: 0px;
+ }
+
+h1 {
+    font-family: futura, sans-serif;
+    text-align: center;
+}
+ 
+
+
+
 .projectName {
     text-transform: uppercase;
     font-size: 16px;
@@ -71,8 +86,4 @@ footer{
 .jumbotron{
   margin-bottom: 0px;
 }
-
-
-
- 
 

@@ -1,38 +1,18 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Artsy Design Co</title>
+  <title>Imagination Bar</title>
 
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
-
-  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
-
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
-
   <meta name-"viewwport" content-"width=device-width, initial-scale=1">
-
   <%= csrf_meta_tags %>
 
 
 </head>
 <body>
-   
-  <script type="text/javascript">
-  $(document).ready(function(){
-    setTimeout(function(){
-      $('#notice').fadeOut("slow");
-    }, 20000);
-   })
-  </script>
-
-  <script type="text/javascript">
-  $(document).ready(function(){
-    setTimeout(function(){
-      $('#alert').fadeOut("slow");
-    }, 20000);
-   })
-  </script>
 
   <!--navbar starts here-->
   <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
@@ -46,7 +26,7 @@
           <span class="icon-bar"></span>
           </button>
           <div class="projectName">
-          <a href="#">Artsy Design Co</a>
+          <a href="#">Imaginate Pics</a>
           </div>
         </nav>
          <div class="navbar-collapse collapse">
@@ -74,20 +54,11 @@
       </div> <!-- end nav container-->
    </nav> <!-- navbar ends here-->
    
+   <div class="container-fluid" id="body-area">
+      <%= yield %>
+   </div>
 
-
-   <% if notice %>
-    <p id="notice" class="alert alert-info"><%= notice %></p>
-   <% end %>
-
-    
-
-   <% if alert %>
-    <p id="alert" class="alert alert-info"><%= alert %></p>
-   <% end %>
-  <%= yield %>
-
-  <%= render 'layouts/footer' %>
+   <%= render 'layouts/footer' %>
 
   
 
@@ -103,7 +74,5 @@
         });
         return false;
     });
-
 </body>
-
 </html>

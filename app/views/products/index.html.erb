@@ -1,9 +1,13 @@
-<h1 class="products">Our Products</h1>
+<p id="notice"><%= notice %></p>
+<div class="container">
+ <h1>Products</h1>
+   <div class="row" id="index">
+      <%= render @products %>
+   </div>
+   
+   <div class="row" id="newproductink">
+   <%= link_to 'New Product', new_product_path, class: "btn btn-primary" %>
+   </div>
+ </div>
 
 
-  <%= render @products %>
-
-
-<br>
-
-<%= link_to 'New Product', new_product_path %>

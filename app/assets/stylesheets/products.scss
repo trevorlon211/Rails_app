@@ -2,8 +2,14 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
+@import "bootstrap-sprockets";
+@import "bootstrap";
 
-#about {
-	margin-left: 10%;
+
+#index {
+	margin-left: 5%;
+	margin-right: 5%;
 	margin-top: 5%;
+	margin-bottom: 60%;
+	display: inline;
 }

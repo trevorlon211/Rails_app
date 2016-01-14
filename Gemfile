@@ -27,6 +27,11 @@ gem 'devise'
 
 gem 'cancancan'
 
+gem 'bootstrap-sass'
+
+
+
+
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 
@@ -57,3 +62,4 @@ end
 group :development, :test do
   gem 'sqlite3'
 end
+
