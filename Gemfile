@@ -27,7 +27,6 @@ gem 'devise'
 
 gem 'cancancan'
 
-gem 'bootstrap-sass', '3.3.5'
 
 
 
