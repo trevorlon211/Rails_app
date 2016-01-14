@@ -2,14 +2,24 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
-@import "bootstrap-sprockets";
-@import "bootstrap";
+
+#rate {
+	text-align: left;
+}
+
+/* products index */
+
+#index img {
+	width: 250px;
+	height: 200px;
+	margin: 0;
+	padding: 0;
+}
 
 
-#index {
-	margin-left: 5%;
-	margin-right: 5%;
-	margin-top: 5%;
-	margin-bottom: 60%;
-	display: inline;
+
+/* ratings */
+
+.product-reviews p {
+	text-align: left;
 }
