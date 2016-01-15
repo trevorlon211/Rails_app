@@ -2,30 +2,27 @@
 <div class="container">
   <div class="row" id="image">
     <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">  
-      <p>
-       <%= image_tag(@product.image_url, class: 'img-responsive') %>
+      <p >
+          <%= image_tag(@product.image_url, class: 'img-responsive') %>
       </p>
     </div>
     <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12" id="about">
       <h3>
-         <%= @product.name %>
+          <%= @product.name %>
       </h3>
       <p>
-         <strong>Color:</strong> <%= @product.colour %>
-      </p>
-      <p>
-         <strong>Description:</strong><br><%= @product.description %>
+        <strong>Color:</strong> <%= @product.colour %>
       </p>
       <p>Average Rating: <div class="rated" data-score="<%= @product.average_rating %>"></div></p>
+      <p>
+          <strong>Description:</strong><br><%= @product.description %>
+      </p>
     </div>
   </div>
-</div>
-
+</div><!-- end container-->
 
 <%= render 'new_comment' %>
 <%= render 'comments' %>
 
 <%= link_to 'Edit', edit_product_path(@product) %> |
 <%= link_to 'Back', products_path %>
-
-
