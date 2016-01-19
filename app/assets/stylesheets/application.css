@@ -55,10 +55,6 @@ h1 {
      float:right;
 }
 
-img{
-    padding: 30px;
-    width: 100%;
-}
 
 footer{
     background-color: #ededed;
@@ -85,5 +81,15 @@ footer{
 
 .jumbotron{
   margin-bottom: 0px;
+}
+
+#carousel-image img {
+  height: 100%;
+  width: 100%;
+}
+
+#carousel-example-generic {
+  width: 500px;
+  height: 400px;
 }
 
