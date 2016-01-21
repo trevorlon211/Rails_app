@@ -1,3 +1,4 @@
+
 class CommentsController < ApplicationController
 	def create
 		@product = Product.find(params[:product_id])
@@ -9,7 +10,7 @@ class CommentsController < ApplicationController
 				format.json { render :show, status: :created, location: @product }
 				format.js
 			else
-				format.html { redirect_to @product, alert: 'Review was not saved successfully.' }
+				format.html { redirect_to @product, alert: 'Review was not saved successfully' }
 				format.json { render json: @comment.errors, status: :unprocessable_entity }
 			end
 		end
@@ -27,7 +28,7 @@ class CommentsController < ApplicationController
 	private
 
 		def comment_params
-			params.require(:comment).permit(:user_id, :body, :rating)
+			params.require(:comment).permit(:first_name, :body, :rating)
 		end
 
 end
