@@ -15,7 +15,7 @@
 
   <!--navbar starts here-->
   <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
-      <div class="container">
+      <div class="container-fluid">
         <nav class="navbar-header">
          <button type="button" class="navbar-toggle" data-toggle="collapse"
           data-target=".navbar-collapse">
@@ -25,9 +25,9 @@
           <span class="icon-bar"></span>
           </button>
           <div class="projectName">
-          <a href="#">Imaginate Pics</a>
+          <a href="#">IPICS</a>
           </div>
-        </nav>
+         </nav>
          <div class="navbar-collapse collapse">
            <ul class= "nav navbar-nav">
              <li><a class="page-scroll" href="/static_pages/landing_page">Home</a>
@@ -42,16 +42,19 @@
                   <%= link_to('Login', new_user_session_path) %>
                <% end %>
              </li>
-             <li><%= form_tag("/products", method: "get") do %>
-                 <%= label_tag(:q, "Search for:") %>
-                 <%= text_field_tag(:q) %>
-                 <%= submit_tag("Search", class: "btn btn-primary") %>
-                 <% end %>
-             </li>
-           </ul>
-        </div>
-      </div> <!-- end nav container-->
-   </nav> <!-- navbar ends here-->
+            </ul>
+            <%= form_tag("/products", method: "get", class: "navbar-form" ) do %>
+              <div class="form-group">
+                <span class="glyphicon glyphicon-search" aria-hidden="true"></span>
+                <%= text_field_tag(:q, nil, class: "form-control", placeholder: "Search" ) %>
+              </div>
+             <% end %>
+             </div>
+           </div>
+          </div><!--end of nav container-->
+        </nav> <!--navbar ends here-->
+
+
 
    <% if notice %>
      <p id="alert" class="alert alert-success"><%= notice %></p>
