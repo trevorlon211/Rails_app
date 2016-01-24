@@ -24,6 +24,18 @@
 }
 
 .form-control {
-    height: 20px;
+    height: 35px;
 }
 
+.form-group {
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+textarea.form-control {
+    height: 120px;
+}
+
+.search{
+  height: 24px;
+}
