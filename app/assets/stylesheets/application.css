@@ -36,7 +36,7 @@ h1 {
 }
 
 .projectName a {
-    color: #a1a1a1;
+    color: #B79966;
     padding: 15px;
 }
 
@@ -44,8 +44,12 @@ h1 {
    font-size: 12px;
    font-weight: 700;
    text-transform: uppercase;
-   background-color: transparent;
+   background-color: #ededed;
  }
+
+ .navbar-inverse .navbar-nav>li>a {
+    color: #B79966;
+}
 
 .navbar{
      position: fixed;
@@ -73,6 +77,12 @@ footer{
     font-size: 1em;
 }
 
+.navbar-fixed-bottom {
+    bottom: 0;
+    margin-bottom: 0;
+    border-width: 1px 0 0;
+    color: #B79966;
+}
 
 
 .copyright{
@@ -85,6 +95,12 @@ footer{
   float:right;
   padding-top: 20px;
   padding-right: 10px;
+  color: #B79966;
+}
+
+
+a:visited {
+    color: #B79966;
 }
 
 .jumbotron{
