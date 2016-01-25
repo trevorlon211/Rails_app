@@ -15,20 +15,24 @@
  */
 
 
+body{
+    font-family: 'Gotham SSm A', 'Gotham SSm B','Gotham',"Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: 300;
+    font-size: 15px;
+}
+.container {
+    width: 100%;
+}
 
  #body-area {
     padding-top: 50px;
     padding-bottom: 200px;
-    padding-left: 15px;
-    padding-right: 15px;
+    padding-left: 0px;
+    padding-right: 0px;
     margin-bottom: 40px;
  }
 
-h1 {
-    font-family: futura, sans-serif;
-    text-align: center;
-}
- 
+
 
 .projectName {
     text-transform: uppercase;
@@ -118,3 +122,32 @@ a:visited {
   height: 400px;
 }
 
+#pic{
+    background-image: url('summer-header-img.jpg');
+    background-position: center center;
+    background-attachment: scroll;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+    padding:100px;
+    padding-top: 50px;
+    height: 500px;
+    min-width: 100%;
+    
+}
+
+.Intro{
+    text-align: center;
+    line-height: 15px;
+    padding-top: 80px;
+  }
+
+.Intro h1{
+  font-size: 65px;
+  text-transform: uppercase;
+  letter-spacing: -0.02em;
+}
+
+.Intro p{
+  font-size: 24px;
+}

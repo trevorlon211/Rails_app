@@ -1,16 +1,4 @@
-body {
-  background-color: #fff;
-  color: #333;
-  font-family: verdana, arial, helvetica, sans-serif;
-  font-size: 13px;
-  line-height: 18px;
-}
 
-p, ol, ul, td {
-  font-family: verdana, arial, helvetica, sans-serif;
-  font-size: 13px;
-  line-height: 18px;
-}
 
 pre {
   background-color: #eee;
@@ -61,5 +49,17 @@ div {
     font-size: 12px;
     list-style: square;
   }
+  
+#login {
+    text-align: center;
+    padding: 40px;
+}
 
+#contact-page{
+  width: 80%;
+  padding-top: 40px;
+}
 
+#contact-page h1{
+  text-align: center;
+}
