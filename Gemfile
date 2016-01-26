@@ -63,5 +63,6 @@ end
 
 group :development, :test do
   gem 'sqlite3'
+  gem 'rspec-rails', '~> 3.0'
 end
 
