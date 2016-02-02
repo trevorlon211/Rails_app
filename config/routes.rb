@@ -1,6 +1,8 @@
 
 Rails.application.routes.draw do
-  devise_for :users, :path => '', :path_names => {:sign_in => 'login', :sign_out => 'logout'}, :controllers => { :registrations => "user_registrations" }
+  resources :post
+  devise_for :users, :path => '', :path_names => {:sign_in => 'login', :sign_out => 'logout'}, 
+             :controllers => { :registrations => "user_registrations" }
   
   resources :users
 
@@ -80,4 +82,6 @@ Rails.application.routes.draw do
   #     # (app/controllers/admin/products_controller.rb)
   #     resources :products
   #   end
-end
+   end
+
+
