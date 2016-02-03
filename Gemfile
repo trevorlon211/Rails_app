@@ -30,6 +30,7 @@ gem 'cancancan'
 
 gem 'will_paginate', '~> 3.0.5'
 
+# Stripe for payments
 gem 'stripe'
 
 
@@ -51,7 +52,7 @@ group :development, :test do
   gem 'guard-rspec', require: false
   gem 'spork-rails'
   gem 'guard-spork'
-
+  gem "brakeman", :require => false
 
   # Use sqlite3 as the database for Active Record
   gem 'sqlite3'

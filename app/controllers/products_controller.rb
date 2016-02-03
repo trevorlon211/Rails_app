@@ -4,6 +4,7 @@ class ProductsController < ApplicationController
   # GET /products
   # GET /products.json
   def index
+    #byebug
     if params[:q]
       search_term = params[:q]
       @products = Product.where("name LIKE ?", "%#{search_term}%")
@@ -11,6 +12,12 @@ class ProductsController < ApplicationController
     else
       @products = Product.all
     end
+
+    logger.debug "Product search results:"
+    @products.each do |item|
+      logger.debug "    Product: #{item.name} - #{item.description}"
+    end
+    logger.debug "Done Iteration!"
   end
 
   # GET /products/1
