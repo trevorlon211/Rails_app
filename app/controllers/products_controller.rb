@@ -1,5 +1,6 @@
 class ProductsController < ApplicationController
   before_action :set_product, only: [:show, :edit, :update, :destroy]
+  respond_to :json, :html
 
   # GET /products
   # GET /products.json
@@ -12,12 +13,7 @@ class ProductsController < ApplicationController
     else
       @products = Product.all
     end
-
-    logger.debug "Product search results:"
-    @products.each do |item|
-      logger.debug "    Product: #{item.name} - #{item.description}"
-    end
-    logger.debug "Done Iteration!"
+     respond_with @products
   end
 
   # GET /products/1
