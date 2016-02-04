@@ -1,9 +1,3 @@
-$("#rate").html("Thank you for your review!");
+$("#new_comment").html("Thank you for your reviews!");
 $('.product-reviews').prepend("<%= j render @comment %>");
-$('.rating').raty({path: '/assets/raty', scoreName: 'comment[rating]'});
-$('.rated').raty({path: '/assets/raty',
-	readOnly: true,
-	score: function() {
-		return $(this).attr('data-score');
-	}
-});
+ratying();
