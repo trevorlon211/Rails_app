@@ -123,7 +123,6 @@ a:visited {
 }
 
 #pic{
-    background-image: url('summer-header-img.jpg');
     -webkit-background-size: cover;
      -moz-background-size: cover;
     -o-background-size: cover;
@@ -133,6 +132,16 @@ a:visited {
     color: white;
     width: 100%;
   }
+
+  #bg {
+  position: fixed; 
+  top: 0; 
+  left: 0; 
+  
+  /* Preserve aspet ratio */
+  min-width: 100%;
+  min-height: 100%;
+}
 
 
 
