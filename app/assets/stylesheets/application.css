@@ -152,3 +152,8 @@ a:visited {
 .Intro p{
   font-size: 24px;
 }
+
+/* iphone */
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+  img { max-width: 100%; }
+}
