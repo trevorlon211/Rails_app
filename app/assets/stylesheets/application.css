@@ -130,6 +130,9 @@ a:visited {
     background-size: cover;
   }
 
+#pic img{
+  width: 100%;
+}
 
 .Intro{
     text-align: center;
