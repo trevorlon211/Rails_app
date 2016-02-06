@@ -16,6 +16,7 @@
 
 
 body{
+    position: relative;
     font-family: 'Gotham SSm A', 'Gotham SSm B','Gotham',"Helvetica Neue", Helvetica, Arial, sans-serif;
     font-weight: 300;
     font-size: 15px;
@@ -123,6 +124,7 @@ a:visited {
 }
 
 #pic{
+    background-image:url('summer-header-img.jpg');
     -webkit-background-size: cover;
      -moz-background-size: cover;
     -o-background-size: cover;
