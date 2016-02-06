@@ -125,14 +125,22 @@ a:visited {
 
 #pic{
     background-image:url('summer-header-img.jpg');
-    background-position: 0px 85px;
-    -webkit-background-size: 100% 100%;
-    -moz-background-size: 100% 100%;
-    -o-background-size: 100% 100%;
-    background-size: 100% 100%;
     color: white;
     width: 100%;
   }
+
+  @media (min-width: 721px) {
+  .header {
+    background-image: url('summer-header-img.jpg');
+  }
+}
+
+/* For mobile */
+@media (max-width: 720px) {
+  .header {      
+     background-image: url('summer-header-img.jpg');
+  }
+}
 
 
 .Intro{
