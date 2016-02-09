@@ -8,6 +8,7 @@
       </p>
     </div>
     <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12" id="about">
+     <% cache @product do %>
       <h3>
           <%= @product.name %>
       </h3>
@@ -22,6 +23,7 @@
       <p>
           <strong>Description:</strong><br><%= @product.description %>
       </p>
+      <% end %>
       <p>
        <%= form_tag "/payments/create" do %>
        <%= hidden_field_tag(:product_id, @product.id) %>
