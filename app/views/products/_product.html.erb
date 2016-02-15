@@ -1,10 +1,18 @@
- <div class="col-lg-4 col-md-4 col-sm-6">
-   <% cache product do %>
+<% cache product do %>
+<div class="col-lg-4 col-md-4 col-sm-6">
     <h4 id="productname"><%= link_to product.name, product %></h4>
-    <p id="product-index"><%= image_tag (product.image_url) %><br>
-    <%= product.colour %><br>
-    <%= link_to 'Edit', edit_product_path(product) %><br>
-    <%= link_to 'Destroy', product, method: :delete, data: { confirm: 'Are you sure?' } %> 
-   <% end %>
-   
- </div>  
+	<div class="product"><%= link_to(image_tag(product.image_url), product) %>
+    <p id="product-index">
+        $<%= product.price %></p>
+    </div>
+     <div class="show-index-links">
+    <% if user_signed_in? && current_user.admin? %>
+      <%= link_to 'Detailed View'.html_safe, product %>
+      <%= link_to 'Edit'.html_safe, edit_product_path(product) %>
+      <%= link_to 'Delete'.html_safe, product, method: :delete, data: { confirm: 'Are you sure?' } %>
+     <% else %>
+      <%= link_to 'Detailed view'.html_safe, product %>
+    <% end %>
+  </div>
+</div>  
+<% end %>

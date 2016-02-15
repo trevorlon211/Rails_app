@@ -38,6 +38,8 @@ gem 'angularjs-rails'
 
 gem 'dalli'
 
+gem 'redis-rails'
+
 
 
 # Use ActiveModel has_secure_password

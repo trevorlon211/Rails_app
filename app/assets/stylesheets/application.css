@@ -123,16 +123,28 @@ a:visited {
   height: 400px;
 }
 
-#pic{
-      background-image: url("contact14.jpg");
-/*Add a background image*/
-    background-attachment: fixed;
-/*Give the background a fixed position does it not scroll when you scroll*/
-    background-size: cover;
-/*Have the background cover the entire div section*/
-    color: white;
+.pic-front {
+  background-image: url("contact14.jpg");
+  max-width: 100%;
+  background-attachment: fixed;
+   background-size: cover;
+   color: white;
+}
+@media only screen and (max-width: 320px) {
+  .pic-front {
+    width: 100%;
   }
-
+}
+@media only screen and (min-width: 321px) and (max-width: 1023px) {
+  .profile-pic {
+    width: 100%;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  .pic-front {
+    float: none;
+  }
+}
 
 
 .Intro{

@@ -1,43 +1,43 @@
-<% logger.debug "Product: #{@product.name}"%>
-<p id="notice"><%= notice %></p>
 <div class="container">
-  <div class="row" id="image">
+  <div class="row" id="imageshow">
     <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">  
-      <p >
+        <% cache @product do %> 
+
         <%= image_tag(@product.image_url, width: "300px", class: "img-zoom", data_zoom_image: @product.image_url) %>
-      </p>
+   
     </div>
     <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12" id="about">
-     <% cache @product do %>
-      <h3>
+       <h3>
           <%= @product.name %>
-      </h3>
-      <p>
-       <strong>Price:</strong>
-        <%= number_to_currency(@product.price) %>
-      </p>
-      <p>
-        <strong>Color:</strong> <%= @product.colour %>
-      </p>
-      <p>Average Rating: <div class="rated" data-score="<%= @product.average_rating %>"></div> </p>
-      <p>
+       </h3>
+       <p>
+        <strong>Price:</strong>
+          <%= number_to_currency(@product.price) %>
+       </p>
+       <p>
+         <strong>Color:</strong> <%= @product.colour %>
+       </p>
+       <p>Average Rating: <div class="rated" data-score="<%= @product.average_rating %>"></div> </p>
+       <p>
           <strong>Description:</strong><br><%= @product.description %>
-      </p>
-      <% end %>
-      <p>
-       <%= form_tag "/payments/create" do %>
-       <%= hidden_field_tag(:product_id, @product.id) %>
-       <%= render partial: "shared/stripe_checkout_button" %>
-       <% end %>
-      </p>
-
+       </p>
+       <p>
+         <%= form_tag "/payments/create" do %>
+         <%= hidden_field_tag(:product_id, @product.id) %>
+         <%= render partial: "shared/stripe_checkout_button" %>
+         <% end %>
+       </p>
     </div>
-  </div>
-</div><!-- end container-->
+    </div>
 
-
- <%= link_to 'Edit', edit_product_path(@product) %> |
- <%= link_to 'Back', products_path %>
+<div id="comments">
+<% if current_user && current_user.admin? %>
+<%= link_to 'Edit', edit_product_path(@product) %> |
+<%= link_to 'Back', products_path %>
+<% end %>
 
 <%= render 'new_comment' %>
 <%= render 'comments' %>
+<% end %>
+</div>
+</div>
