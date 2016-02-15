@@ -141,3 +141,52 @@ a:visited {
   font-size: 24px;
 }
 
+<<<<<<< HEAD
+=======
+.pic-front{
+    width: 100%;
+    background-size: 100% 100%;
+} 
+
+
+.pic-front{
+    width: 100%;
+    background-size: 100% 100%;
+    color: white;
+} 
+
+
+/* Retina display */
+@media screen and (min-width: 1024px){
+    .responsive-image{
+        background-image: url("contact14.jpg");
+    }
+}
+
+/* Desktop */
+@media screen and (min-width: 980px) and (max-width: 1024px){
+    .pic-front{
+        background-image: url("contact14.jpg");
+    }
+}
+
+/* Tablet */
+@media screen and (min-width: 760px) and (max-width: 980px){
+    .pic-front{
+        background-image: url("contact14.jpg");
+    }
+}
+
+/* Mobile HD */
+@media screen and (min-width: 350px) and (max-width: 760px){
+    .pic-front{
+        background-image: url("contact14.jpg");
+    }
+}
+
+/* Mobile LD */
+@media screen and (max-width: 350px){
+    .pic-front{
+        background-image: url("contact14.jpg");
+    }
+
