@@ -21,6 +21,7 @@ body{
     font-weight: 300;
     font-size: 15px;
 }
+
 .container {
     width: 100%;
 }
@@ -188,4 +189,6 @@ a:visited {
     .pic-front{
         background-image: url("contact14.jpg");
     }
+  }
+
 
