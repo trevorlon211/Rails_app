@@ -123,28 +123,6 @@ a:visited {
   height: 400px;
 }
 
-.pic-front {
-  background-image: url("contact14.jpg");
-  max-width: 100%;
-  background-attachment: fixed;
-   background-size: cover;
-   color: white;
-}
-@media only screen and (max-width: 320px) {
-  .pic-front {
-    width: 100%;
-  }
-}
-@media only screen and (min-width: 321px) and (max-width: 1023px) {
-  .profile-pic {
-    width: 100%;
-  }
-}
-@media only screen and (min-width: 1024px) {
-  .pic-front {
-    float: none;
-  }
-}
 
 
 .Intro{
