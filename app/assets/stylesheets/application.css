@@ -50,7 +50,7 @@ body{
    font-size: 12px;
    font-weight: 700;
    text-transform: uppercase;
-   background-color: #ededed;
+   background-color: #3C2D2D;
  }
 
  .navbar-inverse .navbar-nav>li>a {
@@ -62,7 +62,7 @@ body{
      width: 100%;
      top: 0;
      z-index: 1;
-     color: #A07F45;
+     color: #3C2D2D;
 }
 
 .nav{
