@@ -5,21 +5,25 @@ class ProductsController < ApplicationController
   # GET /products
   # GET /products.json
   def index
-    #byebug
     if params[:q]
       search_term = params[:q]
-      @products = Product.where("name LIKE ?", "%#{search_term}%")
-      # return our filtered list here
+      if Rails.env.development?
+        @products = Product.where("name LIKE ?", "%#{search_term}%")
+      else
+        @products = Product.where("name ilike ?", "%#{search_term}%")
+      #return our filtered list here
+    end
     else
       @products = Product.all
     end
-     respond_with @products
+    respond_with @products
   end
 
   # GET /products/1
   # GET /products/1.json
   def show
-    @comments = @product.comments.order("created_at DESC").paginate(page: params[:page], per_page: 5)
+    @comments = @product.comments.order("created_at DESC").paginate(:page => params[:page], :per_page => 4)
+  end
   end
 
   # GET /products/new
