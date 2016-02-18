@@ -4,50 +4,11 @@
 
 
 
-
 #login {
-	width: 80%;
-	padding-top: 40px;
+  min-height: 575px;
 }
 
-
-.login-field {
-  margin-top: 30px;
-  width: 60%;
-  border: 1px solid #194719;
-  border-radius: 10px;
-  padding: 20px;
-}
-
-#login h1{
-	text-align: center;
-}
-
-.signup-field {
-  margin-top: 30px;
-  width: 80%;
-  border: 1px solid #194719;
-  border-radius: 10px;
-  padding: 20px;
-}
-
-.signup-button {
-  float: left;
-}
-
-.login-button {
-  float: left;
-}
-
-.alternative-user-button {
-  float: right;
-}
-
-.form-control {
-	height: 24px;
-}
-
-#register h1{
-	text-align: center;
-	padding-top: 40px;
+#login div {
+  margin: auto;
+  max-width: 500px;
 }
