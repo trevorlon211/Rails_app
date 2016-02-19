@@ -14,11 +14,7 @@
  *= require_self
  */
 
-.brand img {
-  padding-top: 10px;
-  margin: auto;
-  max-width: 200px;
-}
+
 
 #left-text p {
   text-align: center;
