@@ -32,13 +32,13 @@
     </div>
   </div>
 
-<%= render 'new_comment' %>
-<%= render 'comments' %>
-<% end %>
-
- <div id="show-button">
+  <div id="show-button">
     <% if user_signed_in? && current_user.admin? %>
     <%= link_to 'Edit', edit_product_path(@product), class: "btn btn-primary" %>
     <%= link_to 'Back', products_path, class: "btn btn-primary" %>
     <% end %>
   </div>
+
+  <%= render 'new_comment' %>
+  <%= render 'comments' %>
+  <% end %>
