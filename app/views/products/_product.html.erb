@@ -5,7 +5,7 @@
     <p id="product-index">
         $<%= product.price %></p>
     </div>
-    <div class="show-index-links">
+  <div class="show-index-links">
     <% if user_signed_in? && current_user.admin? %>
       <%= link_to 'Detailed View' .html_safe, product %>
       <%= link_to 'Edit' .html_safe, edit_product_path(product) %>
@@ -15,3 +15,4 @@
     <% end %>
   </div>
  </div>
+ <% end %>

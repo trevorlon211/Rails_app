@@ -6,7 +6,7 @@ class Product < ActiveRecord::Base
 
   validates :name, presence: true
   validates :description, presence: true
-  validate :picture_size
+  
 
   def average_rating
     comments.average(:rating).to_f
