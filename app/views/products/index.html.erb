@@ -2,11 +2,9 @@
 <div class="container">
 <h1>Products</h1>
   <div class="row" id="index">
-  	<% cache (cache_key_for_products) do %>
       <%= render @products %>
-    <% end %>
-</div>
-</div> <!-- end container-->
+  </div>
+ </div> <!-- end container-->
 
 <div class="container" id="new-product">
    <% if user_signed_in? && current_user.admin? %>
