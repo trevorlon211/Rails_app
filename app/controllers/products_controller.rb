@@ -5,14 +5,16 @@ class ProductsController < ApplicationController
   # GET /products
   # GET /products.json
   def index
-    if Rails.env.production?
+    if params[:q]
       search_term = params[:q]
-      @products = Product.where("name ilike ?", "%#{search_term}%")
+      if Rails.env.development? #checks to see if in dev mode
+        @products = Product.where("name LIKE ?", "%#{search_term}%").paginate(:page => params[:page], :per_page => 3)
+      else
+        @products = Product.where("name ilike ?", "%#{search_term}%").paginate(:page => params[:page], :per_page => 3)
+      end
     else
-      search_term = params[:q]
-      @products = Product.where("name LIKE ?", "%#{search_term}%")
+      @products = Product.all.paginate(:page => params[:page], :per_page => 3)
     end
-    respond_with @products
   end
 
   # GET /products/1
