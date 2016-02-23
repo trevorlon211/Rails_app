@@ -1,10 +1,9 @@
-
-<h1>Edit Product</h1>
-
-<%= render 'form' %>
-
-<div class="links">
-<%= link_to 'Show', @product %> |
-<%= link_to 'Destroy', @product, method: :delete, data: { confirm: 'Are you sure?' } %> |
-<%= link_to 'Back', products_path %>
-</div>
+<% cache product do %>
+<div class="col-lg-4 col-md-4 col-sm-6">
+	<div class="product"><%= link_to(image_tag(product.image_url), product) %>
+    <h4 id="productname"><%= link_to product.name, product %></h4>
+    <p id="product-index">
+        $<%= product.price %></p>
+    </div>
+</div>  
+<% end %>
