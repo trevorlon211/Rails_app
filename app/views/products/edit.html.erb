@@ -1,6 +1,10 @@
+<h1>Edit Product</h1>
+
 <div class="container">
-  <h1>Editing Product</h1>
+	<%= render 'form' %><br><br>
 
-  <%= render 'form_edit' %>
+	<%= link_to 'Show', @product %> |
+	<%= link_to 'Destroy', @product, method: :delete, data: { confirm: 'Are you sure?' } %> |
+	<%= link_to 'Back', products_path %>
 
-</div>
+</div> <!-- end container -->

@@ -2,15 +2,13 @@
 <p id="notice"><%= notice %></p>
 <div class="container">
 <h1>Products</h1>
-<div class="container">
-   <div class="row">
-       <%= render @products %>
-   </div>
-   <div class="new-product row">
-      <div class="col-md-2 col-xs-12">
-       <% if signed_in? && current_user.admin? %>
-       <%= link_to 'New Product', new_product_path, :class => "btn btn-default" %>
-       <% end %>
-     </div>
-   </div>
- </div>
+  <div class="row" id="index">
+  <% cache (cache_key_for_products) do %>
+      <%= render @products %>
+  <% end %>
+  </div>
+   <% if user_signed_in? && current_user.admin? %>
+        <%= link_to 'New Product', new_product_path, class: "btn btn-primary" %>
+      <% end %>
+</div> <!-- end container-->
+
