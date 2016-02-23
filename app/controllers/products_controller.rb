@@ -5,15 +5,14 @@ class ProductsController < ApplicationController
   # GET /products
   # GET /products.json
   def index
-    #byebug
-    if params[:q]
+    if Rails.env.production?
+      search_term = params[:q]
+      @products = Product.where("name ilike ?", "%#{search_term}%")
+    else
       search_term = params[:q]
       @products = Product.where("name LIKE ?", "%#{search_term}%")
-      # return our filtered list here
-    else
-      @products = Product.all
     end
-     respond_with @products
+    respond_with @products
   end
 
   # GET /products/1
@@ -24,11 +23,7 @@ class ProductsController < ApplicationController
 
   # GET /products/new
   def new
-    if signed_in? && current_user.admin?
-      @product = Product.new
-    else
-      redirect_to products_path
-    end
+      @product = Product.new 
   end
 
   # GET /products/1/edit
