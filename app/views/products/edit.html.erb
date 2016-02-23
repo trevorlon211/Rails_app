@@ -1,10 +1,10 @@
+
 <h1>Edit Product</h1>
 
-<div class="container">
-	<%= render 'form' %><br><br>
+<%= render 'form' %>
 
-	<%= link_to 'Show', @product %> |
-	<%= link_to 'Destroy', @product, method: :delete, data: { confirm: 'Are you sure?' } %> |
-	<%= link_to 'Back', products_path %>
-
-</div> <!-- end container -->
+<div class="links">
+<%= link_to 'Show', @product %> |
+<%= link_to 'Destroy', @product, method: :delete, data: { confirm: 'Are you sure?' } %> |
+<%= link_to 'Back', products_path %>
+</div>
