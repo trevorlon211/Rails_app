@@ -9,7 +9,7 @@
     <% if user_signed_in? && current_user.admin? %>
       <%= link_to 'Detailed View' .html_safe, product %>
       <%= link_to 'Edit' .html_safe, edit_product_path(product) %>
-      <%= button_to 'Destroy', product, :method => :delete, data_confirm: 'Are you sure?', class: "btn btn-default"  %>
+      <%= button_to 'Destroy', product, method: :delete, data_confirm: 'Are you sure?' %>
     <% else %>
       <%= link_to 'Detailed view' .html_safe, product %>
     <% end %>

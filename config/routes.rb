@@ -5,7 +5,6 @@ Rails.application.routes.draw do
              :controllers => { :registrations => "user_registrations" }
   
   resources :users
-
   resources :products do
     resources :comments
   end
@@ -26,7 +25,7 @@ Rails.application.routes.draw do
 
   post 'payments/create'
 
-  resources :orders, only: [:index, :show, :create, :destroy]
+  resources :orders
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
