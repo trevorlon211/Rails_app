@@ -3,6 +3,7 @@ class ProductsController < ApplicationController
   respond_to :json, :html
   skip_before_filter  :verify_authenticity_token
 
+
   # GET /products
   # GET /products.json
   def index
