@@ -14,63 +14,36 @@
  *= require_self
  */
 
-
-
-#left-text p {
-  
-  text-align: center;
-  text-transform: uppercase;
-  color: #939597;
-  margin-top: 120px;
-  font-family: 'Roboto Condensed', sans-serif;
-  font-size: 1.2em;
+.projectName{
+  padding-top: 12px;
+  font-size: 18px;
 }
 
-#right-text p {
-  text-transform: uppercase;
-  color: #939597;
-  margin-top: 120px;
-  font-family: 'Roboto Condensed', sans-serif;
-  font-size: 1.2em;
+.projectName a{
+  color: white;
 }
 
-.navbar {
-  z-index: 100;
-  background-color: #e6e7e8;
+ .navbar-default{
+ background: rgba(0,0,0,0.7);
+ max-height: 44px;
+ z-index: 9999;
 }
 
-.navbar-header {
-  color: #000000;
+.navbar-nav {
+    float: right;
+    font-size: 1.20em;
+    color: #f5f5f7;
+   }
+
+
+.navbar-default .navbar-nav>li>a {
+    color: white;
+    font-size: 1.20em;
 }
 
-.navbar .navbar-nav {
-  display: inline-block;
-  float: none;
-  vertical-align: top;
+.navbar-default .navbar-collapse, .navbar-default .navbar-form {
+    border-color: #A77B30;
 }
-
-.navbar .navbar-collapse {
-  text-align: center;
-}
-
-#bs-example-navbar-collapse-1 ul li a {
-  color: black;
-  font-family: 'Roboto Condensed', sans-serif;
-  font-size: 1.2em;
-}
-
-#bs-example-navbar-collapse-1 {
-  background-color: #e6e7e8;
-  padding-top: 6px; 
-}
-
-.btn-default {
-  background: transparent;
-  border: none;
-  padding: 0;
-}   
-
-
 
 
 
@@ -130,19 +103,6 @@ footer{
   font-size: 24px;
 }
 
-
-.pic-front{
-    width: 100%;
-    background-size: 100% 100%;
-    background-image: url("contact14.jpg");
-} 
-
-
-.pic-front{
-    width: 100%;
-    background-size: 100% 100%;
-    color: white;
-} 
 
 
 
