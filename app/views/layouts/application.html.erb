@@ -38,10 +38,7 @@
         <li><%= link_to "FAQ", static_pages_faq_path %></li>
         <li><div class="form-group">
           <%= form_tag("/products", method: "get", class: 'navbar-form') do %>
-            <%= text_field_tag :q, "", class: 'form-control', placeholder:'Search' %>
-            <%= button_tag '', class: 'btn btn-default' do %>
-            <span class="glyphicon glyphicon-search"></span>
-            <% end %>
+            <%= text_field_tag :q, "", class: 'form-control',  hide_label: true, placeholder:'Search' %>
           <% end %></div>
         </li>
         <% if user_signed_in? %>

@@ -1,12 +1,12 @@
 
-<div class="container-fluid">
-<h1>Products</h1>
+
   <div class="row" id="index">
+    <h1>Products</h1>
     <% cache (cache_key_for_products) do %>
        <%= render @products %>
     <% end %>
   </div>
- </div> <!-- end container-->
+
 
 <div class="container" id="new-product">
    <% if user_signed_in? && current_user.admin? %>

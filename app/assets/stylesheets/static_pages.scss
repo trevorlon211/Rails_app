@@ -1,23 +1,15 @@
 
 
-.actions {
-  display: block;
-  float: center;
-}
-
-#signuplinks {
-  text-align: center;
-}
-
-
  p {
    font-family: lora, serif;
  }
 
-
-
 .search{
   height: 24px;
+}
+
+#about_page{
+  padding-top: 60px;
 }
 
 #about_page h1{
@@ -33,14 +25,15 @@
 
 #contact-page{
   width: 80%;
-  padding-top: 40px;
+  padding-top: 80px;
   margin-bottom: 110px;
 }
 
 #contact-page h1{
-  text-align: center;
   font-family: lora, serif;
 }
 
-
+.faq-page{
+  padding-top: 60px;
+}
 
