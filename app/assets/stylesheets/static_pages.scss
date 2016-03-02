@@ -35,5 +35,27 @@
 
 .faq-page{
   padding-top: 60px;
+  &
+  h2{
+  padding-bottom: 20px;
+  text-align:center;
+  }
+}
+
+.panel-title{
+  font-family: lora, serif;
+  font-size: 20px;
+  font-weight: bold;
+  color: #9A8929;
+  padding: 0;
+  -webkit-transition: color 1s;
+  -moz-transition: color 1s;
+  transition: color 1s;
+}
+.panel-title:hover {
+  color: #000;
+}
+.panel-default>.panel-heading{
+  background-color: #F5F5F5
 }
 
