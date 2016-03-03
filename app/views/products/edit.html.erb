@@ -1,13 +1,9 @@
-
 <h1>Edit Product</h1>
 
 <%= render 'form' %>
 
-<div class="edit-links">
-   <% if user_signed_in? %>
-     <%= link_to 'Show', @product %> |
-     <%= link_to 'Back', products_path %>
-    <% else %>
-     <%= link_to 'Back', products_path %>
-    <% end %>
- </div>
+<div class="links">
+<%= link_to 'Show', @product %> |
+<%= link_to 'Destroy', @product, method: :delete, data: { confirm: 'Are you sure?' } %> |
+<%= link_to 'Back', products_path %>
+</div>
