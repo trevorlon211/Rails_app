@@ -14,13 +14,17 @@
 
 
 #index{
-    padding-top: 60px;
+    padding-top: 40px;
     padding-left: 40px;
 	margin-bottom: 40px;
 }
 
 #new-product{
 	margin-bottom: 80px;
+	&
+	a{
+	color:white
+	}
 }
 
 
@@ -42,4 +46,12 @@
        padding-top: 80px;
        padding-bottom:80px;
 }
+.show-index-links{
+	padding-botoom:20px;
+}
 
+.edit-links{
+	padding-bottom: 80px;
+}
+
+#

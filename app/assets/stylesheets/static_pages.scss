@@ -9,22 +9,23 @@
 }
 
 #about_page{
-  padding-top: 60px;
+  padding-top: 40px;
+  &
+  h1{
+     text-align: center;
+      padding-bottom: 30px;
+  }
 }
 
-#about_page h1{
-  text-align: center;
-  padding-bottom: 30px;
-}
 
 #map{
-  padding-top: 60px;
+  padding-top: 40px;
   padding-bottom: 60px;
   padding-left: 80px;
 }
 
 #contact-page{
-  padding-top: 80px;
+  padding-top: 60px;
   margin-bottom: 110px;
 }
 
@@ -44,7 +45,8 @@
 }
 
 .faq-page{
-  padding-top: 60px;
+  padding-top: 40px;
+  padding-bottom: 40px;
   &
   h2{
   padding-bottom: 20px;
