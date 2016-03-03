@@ -1,9 +1,8 @@
 
 <%= flash[:notice] %>
 <div class= "container" id="contact-page">
-  <h1>Contact Us</h1>
-  <div class="row">
-    <div class ="col-md-8 col-xs-12 col-sm-12">
+  <div class="row" id="contact-form">
+    <h2>Contact Us</h2>
       <%= form_tag("/static_pages/thank_you") do %>
       <div class="form-group">
         <%= label_tag :name, "Name" %>
@@ -20,13 +19,13 @@
       <%= submit_tag "Send", class: 'btn btn-primary' %>
       <% end %>
     </div>
-    <div class ="col-md-4 col-xs-12 col-s-12" id="map">
+   
+  <div id="map">
     <ul>
       <li><span class="glyphicon glyphicon-map-marker"></span> 155 E 23rd St, New York, NY 10010</li>
       <li><span class="glyphicon glyphicon-phone"></span> +49 176 72468090</li>
     </ul>
-    <iframe width="90%" height="120%" frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJ-c2vo6BZwokRcqkrcqmSeRw&key=AIzaSyD7UW2K6L31PsWKgMDgvsAUCvDQ459dszU" allowfullscreen></iframe>
-  </div>
+    <iframe width="90%" height="220px;" frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJ-c2vo6BZwokRcqkrcqmSeRw&key=AIzaSyD7UW2K6L31PsWKgMDgvsAUCvDQ459dszU" allowfullscreen></iframe>
   </div>
 </div>
 

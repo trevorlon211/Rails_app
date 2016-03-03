@@ -18,15 +18,25 @@
 }
 
 #map{
-  padding-top: 40px;
-  padding-left: 40px;
-
+  padding-top: 60px;
+  padding-bottom: 60px;
+  padding-left: 80px;
 }
 
 #contact-page{
-  width: 80%;
   padding-top: 80px;
   margin-bottom: 110px;
+}
+
+#contact-form{
+  width: 80%;
+  margin: auto;
+
+  &
+
+  h2{
+  padding-bottom: 20px;
+  }
 }
 
 #contact-page h1{
@@ -42,6 +52,11 @@
   }
 }
 
+.panel-group {
+    width: 90%;
+    margin: auto;
+}
+
 .panel-title{
   font-family: lora, serif;
   font-size: 20px;
@@ -52,8 +67,10 @@
   -moz-transition: color 1s;
   transition: color 1s;
 }
+
 .panel-title:hover {
-  color: #000;
+  color: #A94442;
+
 }
 .panel-default>.panel-heading{
   background-color: #F5F5F5
