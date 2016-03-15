@@ -19,34 +19,31 @@
 
 
 #map{
-  padding-top: 40px;
+  padding-top: 20px;
   padding-bottom: 60px;
-  padding-left: 80px;
+  padding-left: 20px;
 }
 
 #contact-page{
   padding-top: 60px;
   margin-bottom: 110px;
-}
-
-#contact-form{
-  width: 80%;
-  margin: auto;
 
   &
-
   h2{
-  padding-bottom: 20px;
+  padding-bottom: 30px;
+  text-align: center;
   }
 }
 
-#contact-page h1{
-  font-family: lora, serif;
+#contact-form{
+  width: 90%;
+  margin: auto;
 }
+
 
 .faq-page{
   padding-top: 40px;
-  padding-bottom: 40px;
+  padding-bottom: 80px;
   &
   h2{
   padding-bottom: 20px;
@@ -78,3 +75,7 @@
   background-color: #F5F5F5
 }
 
+.carousel-inner>.item>img, .carousel-inner>.item>a>img {
+    width: 100%;
+    margin: auto;
+}

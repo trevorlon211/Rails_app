@@ -15,9 +15,9 @@
  */
 
 .projectName{
-  font-family: 'Shadows Into Light Two';
-  padding-top: 14px;
-  font-size: 18px;
+  font-family: helvetica, lora, serif;
+  padding-top: 16px;
+  font-size: 20px;
 }
 
 .projectName a{
@@ -59,10 +59,19 @@
 }
 
 #panel-main h1{
-  font-family: 'Shadows Into Light Two';
+  font-family: helvetica, lora, serif;
   font-size: 6em;
   text-align: center;
   padding-top: 60px;
+}
+
+.carousel {
+    position: absolute;
+    padding-right: 0;
+    padding-left: 0;
+    top: 0;
+    left: 0;
+    right: 0;
 }
 
 footer{
@@ -77,35 +86,16 @@ footer{
 
 
 .copyright{
-  padding-top: 20px;
+  padding-top: 26px;
   padding-left:20px;
   float: left;
 }
 
 .follow{
   float:right;
-  padding-top: 20px;
+  padding-top: 26px;
   padding-right: 10px;
   color: #B79966;
 }
-
-
-
-
-
-#carousel-image img {
-  height: 100%;
-  width: 100%;
-}
-
-#carousel-example-generic {
-  width: 500px;
-  height: 400px;
-}
-
-
-
-
-
 
 
