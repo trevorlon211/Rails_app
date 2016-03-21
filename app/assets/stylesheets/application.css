@@ -18,14 +18,15 @@
   font-family: helvetica, lora, serif;
   padding-top: 16px;
   font-size: 20px;
+  font-weight: 500;
 }
 
 .projectName a{
-  color: #cfb53b;
+  color: #fbf9f9;;
 }
 
  .navbar-inverse {
- background: rgba(0,0,0,0.7);
+ background: rgba(0,0,0,0.4);
  width: 100%;
   top: 0; 
 }
@@ -35,8 +36,8 @@
 }
 
 
-.navbar-nav a:hover{
-  color:red;
+.navbar-inverse .navbar-nav>li>a:hover{
+  color:#DE0;
     text-decoration: none;
     transition: color 600ms;
 }
@@ -48,8 +49,8 @@
 
 .navbar-inverse .navbar-nav>li>a  {
     font-size: 1.10em;
-    font-weight:300;
-    color: #cfb53b;
+    font-weight:400;
+    color: #fbf9f9;;
     text-transform: uppercase;
     letter-spacing: 0.05em;
 }
@@ -66,12 +67,21 @@
 }
 
 .carousel {
+    display: block;
     position: absolute;
     padding-right: 0;
     padding-left: 0;
     top: 0;
     left: 0;
     right: 0;
+}
+
+.carousel-inner {
+    height: 480px;
+}
+
+#feature_products{
+  padding-top: 500px;
 }
 
 footer{
