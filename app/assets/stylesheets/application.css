@@ -14,6 +14,10 @@
  *= require_self
  */
 
+.nav.navbar.navbar-inverse.navbar-fixed-top{
+  position: absolute;
+}
+
 .projectName{
   font-family: helvetica, lora, serif;
   padding-top: 16px;
@@ -22,7 +26,7 @@
 }
 
 .projectName a{
-  color: #fbf9f9;;
+  color: #fbf9f9;;s
 }
 
  .navbar-inverse {
@@ -66,14 +70,14 @@
   padding-top: 60px;
 }
 
-.carousel {
+#carousel {
     display: block;
-    position: absolute;
     padding-right: 0;
     padding-left: 0;
     top: 0;
     left: 0;
     right: 0;
+    margin: 0 -34px;
 }
 
 .carousel-inner {
@@ -81,7 +85,7 @@
 }
 
 #feature_products{
-  padding-top: 500px;
+  
 }
 
 footer{
