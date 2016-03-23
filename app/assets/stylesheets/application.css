@@ -70,14 +70,13 @@
   padding-top: 60px;
 }
 
-#carousel {
-    display: block;
-    padding-right: 0;
-    padding-left: 0;
-    top: 0;
-    left: 0;
-    right: 0;
-    margin: 0 -34px;
+.carousel {
+  display: block;
+  top: 0;
+  left: 0;
+  right: 0;
+  margin: 0 -30px;
+
 }
 
 .carousel-inner {
@@ -85,7 +84,7 @@
 }
 
 #feature_products{
-  
+  padding-bottom: 100px;
 }
 
 footer{
