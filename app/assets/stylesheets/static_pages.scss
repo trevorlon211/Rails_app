@@ -1,6 +1,5 @@
 
-
- p {
+p {
    font-family: lora, serif;
  }
 
@@ -80,6 +79,29 @@
     margin: auto;
 }
 
-.col-xs-6 {
-    padding-bottom: 40px;
+#feature_products{
+  padding-bottom: 100px;
+  &
+  h2{
+    font-size: 22px;
+    text-align: center;
+  }
 }
+
+.img-thumbnail{
+  padding: 10px;
+}
+
+.trending_row {
+    position: absolute;
+    left: 8%;
+    right: 0;
+    margin: auto;
+    padding-bottom: 100px;
+    margin-top: 20px;
+    }
+
+.trending_row p{
+            padding-top:10px;
+            font-size: 1.2em;
+ }
