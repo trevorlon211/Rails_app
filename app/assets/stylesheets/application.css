@@ -79,9 +79,10 @@
 
 }
 
-#feature_products{
-  padding-bottom: 100px;
+.img-thumbnail{
+  padding: 10px;
 }
+
 
 footer{
     background-color: #ededed;

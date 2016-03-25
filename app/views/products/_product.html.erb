@@ -1,6 +1,6 @@
 <% cache product do %>
 <div class="col-lg-4 col-md-4 col-sm-6">
-	<div class="product"><%= link_to(image_tag(product.image_url), product) %>
+	<div class="product"><%= link_to(image_tag(product.image_url), product, :class=>"img-thumbnail") %>
     <h4 id="productname"><%= link_to product.name, product %></h4>
     <p id="product-index">
         $<%= product.price %></p>
