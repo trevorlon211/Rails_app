@@ -1,9 +1,9 @@
 <div class="container" id="imageshow">
   <div class="row">
     <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">  
-
+     <div class ="img-thumbnail">
         <%= image_tag(@product.image_url, width: "300px", class: "img-zoom", data_zoom_image: @product.image_url) %>
-   
+     </div>
     </div>
     <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12" id="about">
        <h3>

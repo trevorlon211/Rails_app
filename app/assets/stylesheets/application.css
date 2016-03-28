@@ -41,7 +41,7 @@
 
 
 .navbar-inverse .navbar-nav>li>a:hover{
-  color:#DE0;
+  color:#777;
     text-decoration: none;
     transition: color 600ms;
 }
