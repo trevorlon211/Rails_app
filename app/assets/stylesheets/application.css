@@ -23,21 +23,20 @@ body {
 }
 
 h1{
-    font-size: 1.4em;
-    font-family: helvetica, sans-serif, Arial;
-    text-transform: uppercase;
-    font-weight: 400;
-    letter-spacing: 2px;
+   font-size: 1.5em;
+   font-family: helvetica;
+   text-transform: uppercase;
+   font-weight: 400;
+   letter-spacing: 4px;
 }
-
 .nav.navbar.navbar-inverse.navbar-fixed-top{
   position: absolute;
 }
 
 .projectName{
   font-family: helvetica, lora, serif;
-  padding-top: 10px;
-  font-size: 20px;
+  padding-top: 12px;
+  font-size: 1.5em;
   font-weight: 500;
 }
 
@@ -99,23 +98,23 @@ h1{
 footer{
     background-color: #ededed;
     position: relative;
-    height: 60px;
+    height: 70px;
     bottom: 0px;
     z-index: 1;
-    font-size: 0.8em;
+    font-size: 1em;
 }
 
 
 
 .copyright{
-  padding-top: 16px;
+  padding-top: 26px;
   padding-left:20px;
   float: left;
 }
 
 .follow{
   float:right;
-  padding-top: 16px;
+  padding-top: 26px;
   padding-right: 10px;
   color: #B79966;
 }
