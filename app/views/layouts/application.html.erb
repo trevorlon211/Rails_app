@@ -4,6 +4,7 @@
   <title>CS ART</title>
 
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  <link rel="stylesheet prefetch" href="https://netdna.bootstrapcdn.com/font-awesome/3.1.1/css/font-awesome.css">
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <link href='https://fonts.googleapis.com/css?family=Shadows+Into+Light+Two' rel='stylesheet' type='text/css'>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
@@ -32,7 +33,7 @@
     </div><!--end navbar-header-->
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-      <ul class="nav navbar-nav">
+      <ul class="nav navbar-nav navbar-right">
         <li><%= link_to "Products", products_path %></li>
         <li><%= link_to "About US", static_pages_about_path %></li>
         <li><%= link_to "Contact Us", static_pages_contact_path %></li>
@@ -58,7 +59,7 @@
       </ul>
     </div><!-- end .navbar-collapse -->
   </div><!-- end .container-fluid -->
-</nav>
+ </nav>
 
 
    <% if notice %>
