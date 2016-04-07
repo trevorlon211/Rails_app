@@ -108,47 +108,56 @@ h1{
 
 
 footer{
+    width: 100%;
     background-color: #ededed;
     position: relative;
-    height: 70px;
+    height: 50px;
     bottom: 0px;
     z-index: 1;
     font-size: 0.8em;
+    margin-top: 15px;
+    padding-top: 15px;
 }
 
 
 
 .copyright{
-  padding-top: 26px;
-  padding-left:20px;
-  float: left;
+    width: auto;
+    float: left;
+    padding-left: 20px;
 }
 
 .social-button {
+    top: -5px;
     float: right;
-    padding-right: 20px;
+    padding-right: 30px;
     position: relative;
-    top: -5%;
+    margin: auto;
 }
 
 .icon-button .icon-twitter {
     color: #4099ff;
 }
 
-.icon-button i {
-    background: none;
-    text-decoration: none;
-    color: white;
+.icon-button .icon-facebook{
+  color: #3B5998;
+}
+
+.icon-button {
+    background-color: white;
+    border-radius: 3rem;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 2.0rem;
     height: 3rem;
-    left: 0;
     line-height: 3rem;
-    position: absolute;
-    top: 0;
-    -webkit-transition: all 0.3s;
-    -moz-transition: all 0.3s;
-    -o-transition: all 0.3s;
-    transition: all 0.3s;
+    margin: 0 5px;
+    position: relative;
+    text-align: center;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
     width: 3rem;
-    z-index: 10;
 }
 
