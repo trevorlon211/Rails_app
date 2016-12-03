@@ -34,7 +34,16 @@
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav navbar-right">
-        <li><%= link_to "Products", products_path %></li>
+       <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Shop</a>
+          <ul class="dropdown-menu">
+           <% Category.all.each do |category| %>
+           <li>
+            <%= link_to category.name, products_path(category: category.name) %>
+           </li>
+           <% end %>
+          </ul>
+        </li>
         <li><%= link_to "About US", static_pages_about_path %></li>
         <li><%= link_to "Contact Us", static_pages_contact_path %></li>
         <li><%= link_to "FAQ", static_pages_faq_path %></li>
@@ -68,7 +77,7 @@
    <% if alert %>
     <p id="alert" class="alert alert-danger"><%= alert %></p>
    <% end %>
- </div>
+
 
  <div class="container-fluid">
    <%= yield %>

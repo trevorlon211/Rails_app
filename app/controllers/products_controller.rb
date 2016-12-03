@@ -6,15 +6,11 @@ class ProductsController < ApplicationController
   # GET /products
   # GET /products.json
   def index
-    if params[:q]
-      search_term = params[:q]
-      if Rails.env.development? #checks to see if in dev mode
-        @products = Product.where("name LIKE ?", "%#{search_term}%").paginate(:page => params[:page], :per_page => 6)
-      else
-        @products = Product.where("name ilike ?", "%#{search_term}%").paginate(:page => params[:page], :per_page => 6)
-      end
+    if params[:category].blank?
+      @products = Product.all.order("created_at DESC")
     else
-      @products = Product.all.paginate(:page => params[:page], :per_page => 6)
+      @category_id = Category.find_by(name: params[:category]).id
+      @products = Product.where(category_id: @category_id).order("created_at DESC")
     end
   end
 
@@ -75,12 +71,12 @@ class ProductsController < ApplicationController
   
   private
     # Use callbacks to share common setup or constraints between actions.
-    def set_product
+    def find_product
       @product = Product.find(params[:id])
     end
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def product_params
-      params.require(:product).permit(:name, :description, :image_url, :colour, :price)
+      params.require(:product).permit(:name, :description, :image_url, :colour, :price, :category_id)
     end
 end
