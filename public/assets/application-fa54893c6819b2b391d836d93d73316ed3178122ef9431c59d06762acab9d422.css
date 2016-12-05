@@ -1,0 +1,539 @@
+.cancel-on-png, .cancel-off-png, .star-on-png, .star-off-png, .star-half-png {
+  font-size: 2em;
+}
+
+@font-face {
+  font-family: "raty";
+  font-style: normal;
+  font-weight: normal;
+  src: url("fonts/raty.eot");
+  src: url("fonts/raty.eot?#iefix") format("embedded-opentype");
+  src: url("fonts/raty.svg#raty") format("svg");
+  src: url("fonts/raty.ttf") format("truetype");
+  src: url("fonts/raty.woff") format("woff");
+}
+
+.cancel-on-png, .cancel-off-png, .star-on-png, .star-off-png, .star-half-png {
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  font-family: "raty";
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  line-height: 1;
+  speak: none;
+  text-transform: none;
+}
+
+.cancel-on-png:before {
+  content: "\e600";
+}
+
+.cancel-off-png:before {
+  content: "\e601";
+}
+
+.star-on-png:before {
+  content: "\f005";
+}
+
+.star-off-png:before {
+  content: "\f006";
+}
+
+.star-half-png:before {
+  content: "\f123";
+}
+/* products index */
+/* line 10, /Users/trevorlonjainarain/Desktop/Projects/Rails_app/app/assets/stylesheets/products.css.scss */
+#index img {
+  width: 250px;
+  height: 200px;
+  margin: 0;
+}
+
+/* line 17, /Users/trevorlonjainarain/Desktop/Projects/Rails_app/app/assets/stylesheets/products.css.scss */
+#index {
+  padding-top: 80px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-bottom: 40px;
+}
+/* line 22, /Users/trevorlonjainarain/Desktop/Projects/Rails_app/app/assets/stylesheets/products.css.scss */
+#index
+h1 {
+  text-align: center;
+  font-size: 1.5em;
+  font-family: helvetica;
+  text-transform: uppercase;
+  font-weight: 400;
+  letter-spacing: 4px;
+  padding-bottom: 40px;
+}
+
+/* line 34, /Users/trevorlonjainarain/Desktop/Projects/Rails_app/app/assets/stylesheets/products.css.scss */
+#new-product {
+  margin-bottom: 80px;
+}
+/* line 36, /Users/trevorlonjainarain/Desktop/Projects/Rails_app/app/assets/stylesheets/products.css.scss */
+#new-product
+a {
+  color: white;
+}
+
+/* line 42, /Users/trevorlonjainarain/Desktop/Projects/Rails_app/app/assets/stylesheets/products.css.scss */
+.product {
+  line-height: 12px;
+  text-align: center;
+}
+
+/* line 47, /Users/trevorlonjainarain/Desktop/Projects/Rails_app/app/assets/stylesheets/products.css.scss */
+.product-reviews p {
+  text-align: left;
+}
+
+/* line 51, /Users/trevorlonjainarain/Desktop/Projects/Rails_app/app/assets/stylesheets/products.css.scss */
+#new-comment {
+  text-align: left;
+}
+
+/* line 55, /Users/trevorlonjainarain/Desktop/Projects/Rails_app/app/assets/stylesheets/products.css.scss */
+#new-comment textarea {
+  width: 50%;
+}
+
+/* line 59, /Users/trevorlonjainarain/Desktop/Projects/Rails_app/app/assets/stylesheets/products.css.scss */
+#imageshow {
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+
+/* line 63, /Users/trevorlonjainarain/Desktop/Projects/Rails_app/app/assets/stylesheets/products.css.scss */
+.show-index-links {
+  text-align: center;
+  padding-bottom: 40px;
+}
+
+/* line 68, /Users/trevorlonjainarain/Desktop/Projects/Rails_app/app/assets/stylesheets/products.css.scss */
+.edit-links {
+  padding-bottom: 80px;
+}
+/* line 2, /Users/trevorlonjainarain/Desktop/Projects/Rails_app/app/assets/stylesheets/scaffolds.scss */
+pre {
+  background-color: #eee;
+  padding: 10px;
+  font-size: 11px;
+}
+
+/* line 8, /Users/trevorlonjainarain/Desktop/Projects/Rails_app/app/assets/stylesheets/scaffolds.scss */
+a {
+  color: #000;
+}
+/* line 11, /Users/trevorlonjainarain/Desktop/Projects/Rails_app/app/assets/stylesheets/scaffolds.scss */
+a:visited {
+  color: #666;
+}
+/* line 15, /Users/trevorlonjainarain/Desktop/Projects/Rails_app/app/assets/stylesheets/scaffolds.scss */
+a:hover {
+  color: #fff;
+  background-color: #000;
+}
+
+/* line 23, /Users/trevorlonjainarain/Desktop/Projects/Rails_app/app/assets/stylesheets/scaffolds.scss */
+div.field, div.actions {
+  margin-bottom: 10px;
+}
+
+/* line 28, /Users/trevorlonjainarain/Desktop/Projects/Rails_app/app/assets/stylesheets/scaffolds.scss */
+#notice {
+  color: green;
+}
+
+/* line 32, /Users/trevorlonjainarain/Desktop/Projects/Rails_app/app/assets/stylesheets/scaffolds.scss */
+.field_with_errors {
+  padding: 2px;
+  background-color: red;
+  display: table;
+}
+
+/* line 38, /Users/trevorlonjainarain/Desktop/Projects/Rails_app/app/assets/stylesheets/scaffolds.scss */
+#error_explanation {
+  width: 450px;
+  border: 2px solid red;
+  padding: 7px;
+  padding-bottom: 0;
+  margin-bottom: 20px;
+  background-color: #f0f0f0;
+}
+
+/* line 49, /Users/trevorlonjainarain/Desktop/Projects/Rails_app/app/assets/stylesheets/scaffolds.scss */
+ul li {
+  font-size: 12px;
+  list-style: square;
+}
+/* line 3, /Users/trevorlonjainarain/Desktop/Projects/Rails_app/app/assets/stylesheets/static_pages.scss */
+.search {
+  height: 24px;
+}
+
+/* line 7, /Users/trevorlonjainarain/Desktop/Projects/Rails_app/app/assets/stylesheets/static_pages.scss */
+#about_page {
+  box-sizing: border-box;
+  margin: 0 auto;
+  max-width: 880px;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-bottom: 64px;
+  padding-top: 80px;
+}
+/* line 15, /Users/trevorlonjainarain/Desktop/Projects/Rails_app/app/assets/stylesheets/static_pages.scss */
+#about_page
+h1 {
+  text-align: center;
+  padding-bottom: 30px;
+}
+/* line 20, /Users/trevorlonjainarain/Desktop/Projects/Rails_app/app/assets/stylesheets/static_pages.scss */
+#about_page img {
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  max-width: 100%;
+}
+
+/* line 32, /Users/trevorlonjainarain/Desktop/Projects/Rails_app/app/assets/stylesheets/static_pages.scss */
+#map {
+  padding-top: 20px;
+  padding-bottom: 60px;
+  padding-left: 20px;
+}
+
+/* line 38, /Users/trevorlonjainarain/Desktop/Projects/Rails_app/app/assets/stylesheets/static_pages.scss */
+#contact-page {
+  padding-top: 80px;
+  margin-bottom: 110px;
+}
+/* line 42, /Users/trevorlonjainarain/Desktop/Projects/Rails_app/app/assets/stylesheets/static_pages.scss */
+#contact-page
+h1 {
+  padding-bottom: 30px;
+  text-align: center;
+}
+
+/* line 49, /Users/trevorlonjainarain/Desktop/Projects/Rails_app/app/assets/stylesheets/static_pages.scss */
+#contact-form {
+  width: 90%;
+  margin: auto;
+}
+
+/* line 55, /Users/trevorlonjainarain/Desktop/Projects/Rails_app/app/assets/stylesheets/static_pages.scss */
+.faq-page {
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+/* line 58, /Users/trevorlonjainarain/Desktop/Projects/Rails_app/app/assets/stylesheets/static_pages.scss */
+.faq-page
+h1 {
+  padding-bottom: 20px;
+  text-align: center;
+}
+
+/* line 65, /Users/trevorlonjainarain/Desktop/Projects/Rails_app/app/assets/stylesheets/static_pages.scss */
+.panel-group {
+  width: 90%;
+  margin: auto;
+}
+
+/* line 70, /Users/trevorlonjainarain/Desktop/Projects/Rails_app/app/assets/stylesheets/static_pages.scss */
+.panel-title {
+  font-family: lora, serif;
+  font-size: 20px;
+  font-weight: bold;
+  color: #9A8929;
+  padding: 0;
+  -webkit-transition: color 1s;
+  -moz-transition: color 1s;
+  transition: color 1s;
+}
+
+/* line 81, /Users/trevorlonjainarain/Desktop/Projects/Rails_app/app/assets/stylesheets/static_pages.scss */
+.panel-title:hover {
+  color: #A94442;
+}
+
+/* line 85, /Users/trevorlonjainarain/Desktop/Projects/Rails_app/app/assets/stylesheets/static_pages.scss */
+.panel-default > .panel-heading {
+  background-color: #F5F5F5;
+}
+
+/* line 89, /Users/trevorlonjainarain/Desktop/Projects/Rails_app/app/assets/stylesheets/static_pages.scss */
+.carousel-inner > .item > img, .carousel-inner > .item > a > img {
+  width: 100%;
+  margin: auto;
+}
+
+/* line 95, /Users/trevorlonjainarain/Desktop/Projects/Rails_app/app/assets/stylesheets/static_pages.scss */
+#feature_products {
+  padding-bottom: 100px;
+}
+/* line 97, /Users/trevorlonjainarain/Desktop/Projects/Rails_app/app/assets/stylesheets/static_pages.scss */
+#feature_products
+h1 {
+  font-size: 1.1em;
+  text-align: center;
+  letter-spacing: 2px;
+}
+
+/* line 105, /Users/trevorlonjainarain/Desktop/Projects/Rails_app/app/assets/stylesheets/static_pages.scss */
+.img-thumbnail {
+  padding: 10px;
+}
+
+/* line 109, /Users/trevorlonjainarain/Desktop/Projects/Rails_app/app/assets/stylesheets/static_pages.scss */
+.trending_row {
+  text-align: center;
+  margin: auto;
+  padding-bottom: 100px;
+  margin-top: 20px;
+}
+
+/* line 116, /Users/trevorlonjainarain/Desktop/Projects/Rails_app/app/assets/stylesheets/static_pages.scss */
+.trending_row p {
+  padding-top: 10px;
+  font-size: 1.2em;
+}
+/* line 6, /Users/trevorlonjainarain/Desktop/Projects/Rails_app/app/assets/stylesheets/users.scss */
+.login {
+  padding-top: 80px;
+}
+
+/* line 10, /Users/trevorlonjainarain/Desktop/Projects/Rails_app/app/assets/stylesheets/users.scss */
+.login h1 {
+  text-align: center;
+}
+
+/* line 14, /Users/trevorlonjainarain/Desktop/Projects/Rails_app/app/assets/stylesheets/users.scss */
+#login {
+  padding-top: 30px;
+  min-height: 575px;
+}
+
+/* line 19, /Users/trevorlonjainarain/Desktop/Projects/Rails_app/app/assets/stylesheets/users.scss */
+#login div {
+  margin: auto;
+  max-width: 500px;
+}
+
+/* line 25, /Users/trevorlonjainarain/Desktop/Projects/Rails_app/app/assets/stylesheets/users.scss */
+.actions {
+  display: block;
+  float: center;
+}
+
+/* line 30, /Users/trevorlonjainarain/Desktop/Projects/Rails_app/app/assets/stylesheets/users.scss */
+#signuplinks {
+  text-align: center;
+}
+
+/* line 35, /Users/trevorlonjainarain/Desktop/Projects/Rails_app/app/assets/stylesheets/users.scss */
+.checkbox input[type=checkbox], .checkbox-inline input[type=checkbox], .radio input[type=radio], .radio-inline input[type=radio] {
+  position: absolute;
+  margin-top: 4px\9;
+  margin-left: 0px;
+}
+
+/* line 41, /Users/trevorlonjainarain/Desktop/Projects/Rails_app/app/assets/stylesheets/users.scss */
+.checkbox, .radio {
+  padding-top: 10px;
+}
+
+/* line 46, /Users/trevorlonjainarain/Desktop/Projects/Rails_app/app/assets/stylesheets/users.scss */
+#register {
+  padding-top: 80px;
+  padding-bottom: 100px;
+}
+
+/* line 51, /Users/trevorlonjainarain/Desktop/Projects/Rails_app/app/assets/stylesheets/users.scss */
+#register div {
+  max-width: 500px;
+}
+
+/* line 55, /Users/trevorlonjainarain/Desktop/Projects/Rails_app/app/assets/stylesheets/users.scss */
+#register h1 {
+  text-align: center;
+}
+
+/* line 59, /Users/trevorlonjainarain/Desktop/Projects/Rails_app/app/assets/stylesheets/users.scss */
+#password {
+  padding-top: 60px;
+}
+
+/* line 64, /Users/trevorlonjainarain/Desktop/Projects/Rails_app/app/assets/stylesheets/users.scss */
+#user-ed {
+  padding-top: 60px;
+}
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+
+
+ */
+
+body {
+  background-color: #fff;
+  color: #333;  
+  font-size: 16px;
+  line-height: 30px;
+  letter-spacing: 1px;
+  font-family: helvetica, Arial, sans-serif;
+}
+
+h1{
+   font-size: 1.5em;
+   font-family: helvetica;
+   text-transform: uppercase;
+   font-weight: 400;
+   letter-spacing: 4px;
+}
+.nav.navbar.navbar-inverse.navbar-fixed-top{
+  position: absolute;
+}
+
+.navbar .navbar-nav {
+  display: inline-block;
+  float: none;
+  vertical-align: top;
+}
+
+.navbar .navbar-collapse {
+  text-align: center;
+}
+
+.projectName{
+  font-family: helvetica, lora, serif;
+  padding-top: 12px;
+  font-size: 1.4em;
+  font-weight: 500;
+  padding-left: 10px;
+}
+
+.projectName a{
+  color: #fbf9f9;
+}
+
+ .navbar-inverse {
+ background: rgba(0,0,0,0.7);
+ width: 100%;
+  top: 0; 
+}
+
+.nav-navbar ul li{
+  display: inline-block;
+}
+
+
+.navbar-inverse .navbar-nav>li>a:hover{
+  color:#DE0;
+    text-decoration: none;
+    transition: color 600ms;
+}
+
+
+
+.navbar-inverse .navbar-nav>li>a  {
+    font-size: 1.10em;
+    font-weight:400;
+    color: #fbf9f9;;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+.navbar-inverse .navbar-collapse, .navbar-inverse .navbar-form {
+    border-color: #A77B30;
+}
+
+.navbar .navbar-collapse {
+    text-align: center;
+}
+
+#panel-main h1{
+  font-family: helvetica, lora, serif;
+  font-size: 6em;
+  text-align: center;
+  padding-top: 60px;
+}
+
+.carousel {
+  display: block;
+  top: 0;
+  left: 0;
+  right: 0;
+  margin: 0 -30px;
+
+}
+
+
+footer{
+    width: 100%;
+    background-color: #ededed;
+    position: relative;
+    height: 50px;
+    bottom: 0px;
+    z-index: 1;
+    font-size: 0.8em;
+    margin-top: 15px;
+    padding-top: 15px;
+}
+
+
+
+.copyright{
+    width: auto;
+    float: left;
+    padding-left: 20px;
+}
+
+.social-button {
+    top: -5px;
+    float: right;
+    padding-right: 30px;
+    position: relative;
+    margin: auto;
+}
+
+.icon-button .icon-twitter {
+    color: #4099ff;
+}
+
+.icon-button .icon-facebook{
+  color: #3B5998;
+}
+
+.icon-button {
+    background-color: white;
+    border-radius: 3rem;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 2.0rem;
+    height: 3rem;
+    line-height: 3rem;
+    margin: 0 5px;
+    position: relative;
+    text-align: center;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    width: 3rem;
+}
+
