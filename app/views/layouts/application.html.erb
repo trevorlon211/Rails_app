@@ -1,96 +1,69 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>C2 ART Co</title>
+  <title>Imagination Bar</title>
 
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
-  <link rel="stylesheet prefetch" href="https://netdna.bootstrapcdn.com/font-awesome/3.1.1/css/font-awesome.css">
-  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
-  <link href='https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css'>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+  <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
-  <script src="//use.edgefonts.net/lora.js"></script>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+  <meta name-"viewwport" content-"width=device-width, initial-scale=1">
   <%= csrf_meta_tags %>
-  <link href='https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css'>
+
+
 </head>
 <body>
 
-<!-- above navbar branding -->
- <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
-  <div class="container-fluid">
-    <!-- Brand and toggle get grouped for better mobile display -->
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-        <span class="sr-only">Toggle navigation</span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-      <div class="projectName">
-        <a href="/static_pages/landing_page">C2 ART</a>
-      </div>
-    </div><!--end navbar-header-->
-    <!-- Collect the nav links, forms, and other content for toggling -->
-    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-      <ul class="nav navbar-nav navbar-right">
-       <li class="dropdown">
-          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Shop</a>
-          <ul class="dropdown-menu">
-           <% Category.all.each do |category| %>
-           <li>
-            <%= link_to category.name, products_path(category: category.name) %>
-           </li>
-           <% end %>
-          </ul>
-        </li>
-        <li><%= link_to "About US", static_pages_about_path %></li>
-        <li><%= link_to "Contact Us", static_pages_contact_path %></li>
-        <li><%= link_to "FAQ", static_pages_faq_path %></li>
-        <li><div class="form-group">
-          <%= form_tag("/products", method: "get", class: 'navbar-form') do %>
-            <%= text_field_tag :q, "", class: 'form-control',  hide_label: true, placeholder:'Search' %>
-          <% end %></div>
-        </li>
-        <% if user_signed_in? %>
-        <li class="dropdown">
-          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><span class="glyphicon glyphicon-user" aria-hidden="true"></span> Hi <%= current_user.first_name %>!<span class="caret"></span></a>
-          <ul class="dropdown-menu">
-            <li><%= link_to "My Profile", current_user %></li>
-            <li>
-              <%= link_to('Logout', destroy_user_session_path, :method => :delete) %>
-            </li>
-          </ul>
-        </li>
-        <% else %>
-        <li><%= link_to('Login', new_user_session_path) %></li>
-        <% end %>
-      </ul>
-    </div><!-- end .navbar-collapse -->
-  </div><!-- end .container-fluid -->
- </nav>
+  <!--navbar starts here-->
+  <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+      <div class="container-fluid">
+        <nav class="navbar-header">
+         <button type="button" class="navbar-toggle" data-toggle="collapse"
+          data-target=".navbar-collapse">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          </button>
+          <div class="projectName">
+          <a href="#">Imaginate Pics</a>
+          </div>
+        </nav>
+         <div class="navbar-collapse collapse">
+           <ul class= "nav navbar-nav">
+             <li><a class="page-scroll" href="/static_pages/landing_page">Home</a>
+             </li>
+             <li><a class="page-scroll" href="/static_pages/about">About</a></li>
+             <li><a class="page-scroll" href="/products">Products</a>
+             </li>
+             <li><a class="page-scroll" href="/static_pages/contact">Contact</a></li>
+             <li><% if user_signed_in? %>
+                  <%= link_to('Logout', destroy_user_session_path, :method => :delete) %>
+               <% else %>
+                  <%= link_to('Login', new_user_session_path) %>
+               <% end %>
+             </li>
+             <li><%= form_tag("/products", method: "get") do %>
+                 <%= label_tag(:q, "Search for:") %>
+                 <%= text_field_tag(:q) %>
+                 <%= submit_tag("Search", class: "btn btn-primary") %>
+                 <% end %>
+             </li>
+           </ul>
+        </div>
+      </div> <!-- end nav container-->
+   </nav> <!-- navbar ends here-->
+   
+   <div class="container-fluid" id="body-area">
+      <%= yield %>
+   </div>
 
-
-   <% if notice %>
-    <p id="alert" class="alert alert-success"><%= notice %></p>
-   <% end %>
-   <% if alert %>
-    <p id="alert" class="alert alert-danger"><%= alert %></p>
-   <% end %>
-
-
- <div class="container-fluid">
-   <%= yield %>
- </div>
-
-
-  <%= render 'layouts/footer' %>
+   <%= render 'layouts/footer' %>
 
   
 
 <!-- JS Scripts -->
-
-  <script type="text/javascript">
+    <script type="text/javascript">
   var $root = $('html, body');
     $('.navbar-nav a').click(function() {
         var href = $.attr(this, 'href');
@@ -101,8 +74,5 @@
         });
         return false;
     });
-  </script>
-
-   
 </body>
 </html>
