@@ -1,28 +1,31 @@
 class ProductsController < ApplicationController
-  before_action :find_product, only: [:show, :edit, :update, :destroy]
+  before_action :set_product, only: [:show, :edit, :update, :destroy]
   respond_to :json, :html
-
 
   # GET /products
   # GET /products.json
   def index
-    if params[:category].blank?
-      @products = Product.all.order("created_at DESC")
+    if params[:q]
+      search_term = params[:q]
+      if Rails.env.development? #checks to see if in dev mode
+        @products = Product.where("name LIKE ?", "%#{search_term}%").paginate(:page => params[:page], :per_page => 3)
+      else
+        @products = Product.where("name ilike ?", "%#{search_term}%").paginate(:page => params[:page], :per_page => 3)
+      end
     else
-      @category_id = Category.find_by(name: params[:category]).id
-      @products = Product.where(category_id: @category_id).order("created_at DESC")
+      @products = Product.all.paginate(:page => params[:page], :per_page => 3)
     end
   end
-
   # GET /products/1
   # GET /products/1.json
   def show
-    @comments = @product.comments.order("created_at DESC").paginate(page: params[:page], per_page: 5)
+    @comments = @product.comments.order("created_at DESC").paginate(:page => params[:page], :per_page => 4)
+  end
   end
 
   # GET /products/new
   def new
-      @product = Product.new 
+    @product = Product.new
   end
 
   # GET /products/1/edit
@@ -33,9 +36,10 @@ class ProductsController < ApplicationController
   # POST /products.json
   def create
     @product = Product.new(product_params)
+
     respond_to do |format|
       if @product.save
-        format.html { redirect_to products_url, notice: 'Product was successfully created.' }
+        format.html { redirect_to @product, notice: 'Product was successfully created.' }
         format.json { render :show, status: :created, location: @product }
       else
         format.html { render :new }
@@ -67,16 +71,15 @@ class ProductsController < ApplicationController
       format.json { head :no_content }
     end
   end
-
   
   private
     # Use callbacks to share common setup or constraints between actions.
-    def find_product
+    def set_product
       @product = Product.find(params[:id])
     end
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def product_params
-      params.require(:product).permit(:name, :description, :image_url, :colour, :price, :category_id)
+      params.require(:product).permit(:name, :description, :image_url, :colour, :price)
     end
 end
