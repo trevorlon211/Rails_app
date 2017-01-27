@@ -94,10 +94,11 @@ h1{
   display: none;
 }
 
-.input-group{
+.input-group-btn:last-child>.btn, .input-group-btn:last-child>.btn-group {
   margin-top: 6.5px;
   display : inline-block;
   padding-left: 20px;
+  display: none;
 }
 
 #panel-main h1{
