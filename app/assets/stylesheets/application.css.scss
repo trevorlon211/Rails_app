@@ -90,6 +90,16 @@ h1{
     text-align: center;
 }
 
+#search_bar {
+  display: none;
+}
+
+.input-group{
+  margin-top: 6.5px;
+  display : inline-block;
+  padding-left: 20px;
+}
+
 #panel-main h1{
   font-family: helvetica, lora, serif;
   font-size: 6em;
