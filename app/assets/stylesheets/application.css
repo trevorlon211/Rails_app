@@ -37,6 +37,7 @@ h1{
   display: inline-block;
   float: none;
   vertical-align: top;
+  padding-left: 40px;
 }
 
 .navbar .navbar-collapse {
@@ -73,7 +74,6 @@ h1{
 }
 
 
-
 .navbar-inverse .navbar-nav>li>a  {
     font-size: 1.10em;
     font-weight:400;
@@ -90,15 +90,19 @@ h1{
     text-align: center;
 }
 
+.form-control {
+  height: 26px;
+}
+
 #search_bar {
   display: none;
 }
 
-.input-group-btn:last-child>.btn, .input-group-btn:last-child>.btn-group {
-  margin-top: 6.5px;
+.input-group {
+  margin-top: 9px;
   display : inline-block;
-  padding-left: 20px;
-  display: none;
+  padding-left: 40px;
+  border-radius: 1px; 
 }
 
 #panel-main h1{
